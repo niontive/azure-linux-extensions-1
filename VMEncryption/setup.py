@@ -36,7 +36,7 @@ from distutils.core import setup
 from zipfile import ZipFile
 from shutil import copy2
 
-from Common import CommonVariables
+from main.Common import CommonVariables
 
 packages_array = []
 main_folder = 'main'
