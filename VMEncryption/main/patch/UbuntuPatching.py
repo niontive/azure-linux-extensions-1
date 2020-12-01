@@ -32,7 +32,7 @@ import subprocess
 
 from AbstractPatching import AbstractPatching
 from Common import *
-from main.CommandExecutor import *
+from CommandExecutor import *
 
 
 class UbuntuPatching(AbstractPatching):

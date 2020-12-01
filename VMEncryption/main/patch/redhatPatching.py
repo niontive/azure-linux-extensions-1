@@ -34,7 +34,7 @@ import inspect
 
 from AbstractPatching import AbstractPatching
 from Common import *
-from main.CommandExecutor import *
+from CommandExecutor import *
 
 class redhatPatching(AbstractPatching):
     def __init__(self, logger, distro_info):
