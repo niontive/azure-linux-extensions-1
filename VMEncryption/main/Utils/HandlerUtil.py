@@ -68,7 +68,7 @@ import time
 
 from Common import *
 from os.path import join
-from main.Utils.WAAgentUtil import waagent
+from Utils.WAAgentUtil import waagent
 from waagent import LoggerInit
 import logging
 import logging.handlers
