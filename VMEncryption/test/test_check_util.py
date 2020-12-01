@@ -149,7 +149,8 @@ class TestCheckUtil(unittest.TestCase):
         none /sys/fs/pstore pstore rw,relatime 0 0
         systemd /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,name=systemd 0 0
         /dev/mapper/fee16d98-9c18-4e7d-af70-afd7f3dfb2d9 /mnt/resource ext4 rw,relatime,data=ordered 0 0
-        /dev/mapper/vg0-lv0 /data ext4 rw,relatime,discard,data=ordered 0 0"""
+        /dev/mapper/vg0-lv0 /data ext4 rw,relatime,discard,data=ordered 0 0
+        """
         with mock.patch("__builtin__.open", mock.mock_open(read_data=proc_mounts_output)):
             self.assertFalse(self.cutil.is_unsupported_mount_scheme())
 
