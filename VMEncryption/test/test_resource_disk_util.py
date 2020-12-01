@@ -23,7 +23,7 @@ import mock
 
 from main.ResourceDiskUtil import ResourceDiskUtil
 from main.DiskUtil import DiskUtil
-from Common import CommonVariables
+from main.Common import CommonVariables
 from console_logger import ConsoleLogger
 
 

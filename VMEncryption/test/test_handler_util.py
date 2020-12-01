@@ -21,9 +21,9 @@
 import unittest
 import os
 import console_logger
-import main.patch as patch
+import patch
 import glob
-from main.Utils import HandlerUtil
+from Utils import HandlerUtil
 from tempfile import mkstemp
 
 class TestHandlerUtil(unittest.TestCase):

@@ -2,7 +2,7 @@ import unittest
 import mock
 
 from main.check_util import CheckUtil
-from Common import CommonVariables
+from main.Common import CommonVariables
 from StringIO import StringIO
 from console_logger import ConsoleLogger
 
@@ -132,7 +132,8 @@ class TestCheckUtil(unittest.TestCase):
             }, { "os": "NotEncrypted" }, mock_distro_patcher)
 
     def test_mount_scheme(self):
-        proc_mounts_output = """sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+        proc_mounts_output = """
+        sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
         proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
         udev /dev devtmpfs rw,relatime,size=4070564k,nr_inodes=1017641,mode=755 0 0
         devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
