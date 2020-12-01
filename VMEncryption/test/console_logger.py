@@ -38,4 +38,4 @@ class ConsoleLogger(object):
         print(log_msg)
 
     def error(self, msg):
-        log(msg,'Error')
+        self.log(msg,'Error')

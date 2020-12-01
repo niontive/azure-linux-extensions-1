@@ -26,7 +26,7 @@ import os.path
 # it as a submodule of current module
 #
 def searchWAAgent():
-    agentPath = '/usr/sbin/waagent'
+    agentPath = '/usr/bin/waagent'
     if os.path.isfile(agentPath):
         return agentPath
     user_paths = os.environ['PYTHONPATH'].split(os.pathsep)

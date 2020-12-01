@@ -30,7 +30,7 @@ import traceback
 import datetime
 import subprocess
 from redhatPatching import redhatPatching
-from Common import *
+from main.Common import *
 
 
 class oraclePatching(redhatPatching):

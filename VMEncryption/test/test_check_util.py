@@ -132,8 +132,7 @@ class TestCheckUtil(unittest.TestCase):
             }, { "os": "NotEncrypted" }, mock_distro_patcher)
 
     def test_mount_scheme(self):
-        proc_mounts_output = """
-        sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+        proc_mounts_output = """sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
         proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
         udev /dev devtmpfs rw,relatime,size=4070564k,nr_inodes=1017641,mode=755 0 0
         devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
@@ -149,8 +148,7 @@ class TestCheckUtil(unittest.TestCase):
         none /sys/fs/pstore pstore rw,relatime 0 0
         systemd /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,name=systemd 0 0
         /dev/mapper/fee16d98-9c18-4e7d-af70-afd7f3dfb2d9 /mnt/resource ext4 rw,relatime,data=ordered 0 0
-        /dev/mapper/vg0-lv0 /data ext4 rw,relatime,discard,data=ordered 0 0
-        """
+        /dev/mapper/vg0-lv0 /data ext4 rw,relatime,discard,data=ordered 0 0"""
         with mock.patch("__builtin__.open", mock.mock_open(read_data=proc_mounts_output)):
             self.assertFalse(self.cutil.is_unsupported_mount_scheme())
 

@@ -66,9 +66,9 @@ import json
 import tempfile
 import time
 
-from Common import *
+from main.Common import *
 from os.path import join
-from Utils.WAAgentUtil import waagent
+from main.Utils.WAAgentUtil import waagent
 from waagent import LoggerInit
 import logging
 import logging.handlers

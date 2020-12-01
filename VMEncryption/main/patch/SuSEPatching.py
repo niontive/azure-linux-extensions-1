@@ -31,8 +31,8 @@ import datetime
 import subprocess
 
 from AbstractPatching import AbstractPatching
-from Common import *
-from CommandExecutor import *
+from main.Common import *
+from main.CommandExecutor import *
 
 
 class SuSEPatching(AbstractPatching):
