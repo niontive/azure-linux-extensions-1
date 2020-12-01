@@ -1,7 +1,7 @@
 import unittest
 import mock
 
-from main.Common import CryptItem
+from Common import CryptItem
 from main.EncryptionEnvironment import EncryptionEnvironment
 from main.DiskUtil import DiskUtil
 from console_logger import ConsoleLogger

@@ -33,7 +33,7 @@ import subprocess
 import inspect
 
 from AbstractPatching import AbstractPatching
-from main.Common import *
+from Common import *
 from main.CommandExecutor import *
 
 class redhatPatching(AbstractPatching):

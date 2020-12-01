@@ -31,7 +31,7 @@ import datetime
 import subprocess
 
 from AbstractPatching import AbstractPatching
-from main.Common import *
+from Common import *
 from main.CommandExecutor import *
 
 

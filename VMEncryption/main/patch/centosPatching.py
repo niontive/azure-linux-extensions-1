@@ -32,7 +32,7 @@ import datetime
 import subprocess
 
 from redhatPatching import redhatPatching
-from main.Common import *
+from Common import *
 from main.CommandExecutor import *
 
 class centosPatching(redhatPatching):

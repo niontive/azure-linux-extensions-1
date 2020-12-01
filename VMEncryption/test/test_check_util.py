@@ -2,7 +2,7 @@ import unittest
 import mock
 
 from main.check_util import CheckUtil
-from main.Common import CommonVariables
+from Common import CommonVariables
 from StringIO import StringIO
 from console_logger import ConsoleLogger
 
