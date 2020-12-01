@@ -62,6 +62,8 @@ packages_array.append(oscrypto_folder + '/ubuntu_1604')
 packages_array.append(oscrypto_folder + '/ubuntu_1604/encryptstates')
 packages_array.append(oscrypto_folder + '/ubuntu_1404')
 packages_array.append(oscrypto_folder + '/ubuntu_1404/encryptstates')
+packages_array.append(oscrypto_folder + '/mariner_10')
+packages_array.append(oscrypto_folder + '/mariner_10/encryptstates')
 
 transitions_folder = 'transitions/transitions'
 packages_array.append(transitions_folder)

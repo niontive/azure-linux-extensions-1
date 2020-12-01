@@ -26,6 +26,7 @@ from redhatPatching import redhatPatching
 from centosPatching import centosPatching
 from SuSEPatching import SuSEPatching
 from oraclePatching import oraclePatching
+from marinerPatching import marinerPatching
 
 # Define the function in case waagent(<2.0.4) doesn't have DistInfo()
 def DistInfo():
