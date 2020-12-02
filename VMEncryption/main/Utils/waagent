@@ -1695,7 +1695,21 @@ class UbuntuDistro(debianDistro):
     def __init__(self):
         super(UbuntuDistro, self).__init__()
         self.init_script_file = '/etc/init/waagent.conf'
-        self.init_file = ubuntinit_fileelf.agent_service_name + '.conf')
+        self.init_file = ubuntu_upstart_file
+        self.fileBlackList = ["/root/.bash_history", "/var/log/waagent.log"]
+        self.dhcp_client_name = None
+        self.getpidcmd = 'pidof '
+
+    def registerAgentService(self):
+        return self.installAgentServiceScriptFiles()
+
+    def uninstallAgentService(self):
+        """
+        If we are packaged - the service name is walinuxagent, do nothing.
+        """
+        if self.agent_service_name == 'walinuxagent':
+            return 0
+        os.remove('/etc/init/' + self.agent_service_name + '.conf')
 
     def unregisterAgentService(self):
         """
